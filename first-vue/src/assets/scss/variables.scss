@@ -1,0 +1,24 @@
+// color
+
+$headerColor: rgb(255, 202, 147);
+$itemColor: rgb(255, 223, 190);
+$btnColor: rgb(255, 236, 216);
+$checkBoxColor:rgb(254, 181, 103);
+
+// fonts 
+
+$titleFonts: 'Open Sans',
+sans-serif;
+$itemFonts: 'Inter',
+sans-serif;
+
+// fonts color
+
+$fontsColor:rgba(127, 75, 19, 1);
+
+// mixin
+
+@mixin fonts($font-family, $color) {
+   font-family: $font-family;
+   color: $color;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@600&display=swap');
+
+@import "variables";
+@import "header";
+@import "container";
+@import "btn";
+@import "footer";
+
+html {
+   font-size: 10px;
+}
+
+body {
+   background: linear-gradient(to right, rgba(255, 126, 95, 1), rgba(254, 181, 103, 1));
+
+   height: 100%;
+
+}
+
+.content {
+   .todo {
+      position: absolute;
+      top: 9%;
+      left: 50%;
+      background-image: url("./../todo.svg");
+      background-repeat: no-repeat;
+      width: 40rem;
+      height: 51.2rem;
+      z-index: -1;
+   }
+}
+
+.wrapper {
+   max-width: 54rem;
+   width: 100%;
+   margin: 10rem auto 0 auto;
+   background-color: #fff;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+
+}

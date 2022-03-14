@@ -1,0 +1,27 @@
+.footer {
+   padding: 0 3rem;
+   max-width: 54rem;
+   height: 5rem;
+   background-color: $headerColor;
+   @include fonts($titleFonts, rgba(127, 75, 19, 0.42));
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   &__counter {}
+
+   &__readiness {
+      display: flex;
+
+      &__item {
+         margin-right: 2.5rem;
+      }
+
+      .activeTask {
+         border: .2rem solid rgba(127, 75, 19, 0.42);
+         border-radius: 1rem;
+         padding: 0 1.1rem;
+      }
+   }
+}

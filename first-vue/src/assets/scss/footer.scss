@@ -9,7 +9,6 @@
    align-items: center;
    justify-content: space-between;
 
-   &__counter {}
 
    &__readiness {
       display: flex;
@@ -22,6 +21,7 @@
          }
 
          &-text {
+            cursor: pointer;
             position: relative;
             display: inline-block;
 
@@ -52,10 +52,5 @@
 
       }
 
-      // .activeTask {
-      //    border: 0.2rem solid $footerBorder;
-      //    border-radius: 1rem;
-      //    padding: 0 1.1rem;
-      // }
    }
 }

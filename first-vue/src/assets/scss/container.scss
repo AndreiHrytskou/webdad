@@ -15,30 +15,50 @@
       position: relative;
 
       input {
-         opacity: 0;
-         width: 2.4rem;
-         height: 2.4rem;
-         margin: 1.3rem 2rem;
-         z-index: 10;
+         display: none;
       }
 
       .checkbox {
-         position: absolute;
-         width: 2.3rem;
-         height: 2.3rem;
-         border: .2rem solid $checkBoxColor;
-         border-radius: 1rem;
-         margin: 1.3rem 2rem;
+         position: relative;
+         display: inline-block;
+         top: 0;
+         cursor: pointer;
+
+         &::before {
+            content: "";
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            border: 0.2rem solid $checkBoxColor;
+            border-radius: 1rem;
+            margin: 1.3rem 2rem;
+            vertical-align: middle;
+         }
+
+         &::after {
+            content: "\2713";
+            text-align: center;
+            color: $bgColorContainer;
+            padding: 1px 0;
+            background-color: $checkBoxColor;
+            position: absolute;
+            top: 1.3rem;
+            left: 2rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 1rem;
+            border: 0.1rem solid $checkBoxColor;
+            opacity: 0;
+            transition: 0.2s;
+         }
       }
 
-      .active::before {
-         content: url("../icons/checked.png");
-         position: absolute;
-         top: -.5px;
-         left: -.5px;
+      input:checked+.checkbox::after {
+         opacity: 1;
       }
 
       .close {
+         cursor: pointer;
          position: absolute;
          right: 2rem;
          top: 1.3rem;

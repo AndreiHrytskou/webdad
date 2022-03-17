@@ -60,3 +60,19 @@
 		</div>
 	</div>
 </template>
+
+<style lang="scss">
+@import "@/assets/main.scss";
+.header {
+   text-align: center;
+   max-width: 54rem;
+   width: 100%;
+   height: 5rem;
+   background-color: $headerColor;
+
+   &__title {
+      font-family: $titleFonts;
+      color: $fontsColor;
+   }
+}
+</style>

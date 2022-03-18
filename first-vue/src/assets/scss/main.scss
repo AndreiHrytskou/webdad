@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@600&display=swap');
 
-@import "variables";
-@import "header";
-@import "container";
-@import "entery";
-@import "footer";
+@import "./variables.scss";
+@import "./../../components/header/header.scss";
+@import "./../../components/container/container.scss";
+@import "./../../components/entery/entery.scss";
+@import "./../../components/footer/footer.scss";
 
 html {
    font-size: 10px;

@@ -57,195 +57,196 @@
 		</div>
 	</div>
 </template>
-<!--
-<style lang="scss">
-// @import "@/assest/scss/main.scss"
-.header {
-   text-align: center;
-   max-width: 54rem;
-   width: 100%;
-   height: 5rem;
-   background-color: $headerColor;
 
-   &__title {
-      font-family: $titleFonts;
-      color: $fontsColor;
-   }
-}
-.container {
-   max-width: 54rem;
-   margin: 3rem;
+<style lang="scss" >
+// @import "@/assest/scss/main.scss";
 
-   &__item {
-      @include fonts($itemFonts, $fontsColor);
-      border: 1px solid $itemColor;
-      border-radius: 1rem;
-      max-width: 48rem;
-      height: 5rem;
-      background-color: $itemColor;
-      display: flex;
-      align-items: center;
-      margin-bottom: 2.5rem;
-      position: relative;
+// .header {
+//    text-align: center;
+//    max-width: 54rem;
+//    width: 100%;
+//    height: 5rem;
+//    background-color: $headerColor;
 
-      input {
-         display: none;
-      }
+//    &__title {
+//       font-family: $titleFonts;
+//       color: $fontsColor;
+//    }
+// }
+// .container {
+//    max-width: 54rem;
+//    margin: 3rem;
 
-      .checkbox {
-         position: relative;
-         display: inline-block;
-         top: 0;
-         cursor: pointer;
+//    &__item {
+//       @include fonts($itemFonts, $fontsColor);
+//       border: 1px solid $itemColor;
+//       border-radius: 1rem;
+//       max-width: 48rem;
+//       height: 5rem;
+//       background-color: $itemColor;
+//       display: flex;
+//       align-items: center;
+//       margin-bottom: 2.5rem;
+//       position: relative;
 
-         &::before {
-            content: "";
-            display: inline-block;
-            width: 2.4rem;
-            height: 2.4rem;
-            border: 0.2rem solid $checkBoxColor;
-            border-radius: 1rem;
-            margin: 1.3rem 2rem;
-            vertical-align: middle;
-         }
+//       input {
+//          display: none;
+//       }
 
-         &::after {
-            content: "\2713";
-            text-align: center;
-            color: $bgColorContainer;
-            padding: 1px 0;
-            background-color: $checkBoxColor;
-            position: absolute;
-            top: 1.3rem;
-            left: 2.1rem;
-            width: 2.4rem;
-            height: 2.4rem;
-            border-radius: 1rem;
-            border: 0.1rem solid $checkBoxColor;
-            opacity: 0;
-            transition: 0.2s;
-         }
-      }
+//       .checkbox {
+//          position: relative;
+//          display: inline-block;
+//          top: 0;
+//          cursor: pointer;
 
-      input:checked+.checkbox::after {
-         opacity: 1;
-      }
+//          &::before {
+//             content: "";
+//             display: inline-block;
+//             width: 2.4rem;
+//             height: 2.4rem;
+//             border: 0.2rem solid $checkBoxColor;
+//             border-radius: 1rem;
+//             margin: 1.3rem 2rem;
+//             vertical-align: middle;
+//          }
 
-      .close {
-         cursor: pointer;
-         position: absolute;
-         right: 2rem;
-         top: 1.3rem;
-         background-image: url("../icons/close.svg");
-         width: 2.6rem;
-         height: 2.6rem;
-      }
+//          &::after {
+//             content: "\2713";
+//             text-align: center;
+//             color: $bgColorContainer;
+//             padding: 1px 0;
+//             background-color: $checkBoxColor;
+//             position: absolute;
+//             top: 1.3rem;
+//             left: 2.1rem;
+//             width: 2.4rem;
+//             height: 2.4rem;
+//             border-radius: 1rem;
+//             border: 0.1rem solid $checkBoxColor;
+//             opacity: 0;
+//             transition: 0.2s;
+//          }
+//       }
 
-      .close:hover {
-         background-image: url("../icons/closeHover.svg");
+//       input:checked+.checkbox::after {
+//          opacity: 1;
+//       }
 
-      }
-   }
+//       .close {
+//          cursor: pointer;
+//          position: absolute;
+//          right: 2rem;
+//          top: 1.3rem;
+//          background-image: url("../icons/close.svg");
+//          width: 2.6rem;
+//          height: 2.6rem;
+//       }
 
-   &__item:last-child {
-      margin-bottom: 0;
-   }
-}
-.entery {
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
-   max-width: 54rem;
-   margin: 3rem;
+//       .close:hover {
+//          background-image: url("../icons/closeHover.svg");
 
-   &__add {
-      @include fonts($itemFonts, $headerColor);
-      font-size: 2rem;
-      background-color: $btnColor;
-      max-width: 48rem;
-      width: 100%;
-      height: 5rem;
-      background-image: url("data:image/svg+xml,%3csvg max-width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFCA93FF' stroke-width='1.5' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-      border-radius: 1rem;
-      cursor: pointer;
-      border: none;
-      text-align: center;
-   }
-}
+//       }
+//    }
 
-::-webkit-input-placeholder {
-   /* WebKit browsers */
-   color: $headerColor;
-}
+//    &__item:last-child {
+//       margin-bottom: 0;
+//    }
+// }
+// .entery {
+//    display: flex;
+//    flex-direction: column;
+//    margin: 0 auto;
+//    max-width: 54rem;
+//    margin: 3rem;
 
-:-moz-placeholder {
-   /* Mozilla Firefox 4 to 18 */
-   color: $headerColor;
-}
+//    &__add {
+//       @include fonts($itemFonts, $headerColor);
+//       font-size: 2rem;
+//       background-color: $btnColor;
+//       max-width: 48rem;
+//       width: 100%;
+//       height: 5rem;
+//       background-image: url("data:image/svg+xml,%3csvg max-width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFCA93FF' stroke-width='1.5' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+//       border-radius: 1rem;
+//       cursor: pointer;
+//       border: none;
+//       text-align: center;
+//    }
+// }
 
-::-moz-placeholder {
-   /* Mozilla Firefox 19+ */
-   color: $headerColor;
-}
+// ::-webkit-input-placeholder {
+//    /* WebKit browsers */
+//    color: $headerColor;
+// }
 
-:-ms-input-placeholder {
-   /* Internet Explorer 10+ */
-   color: $headerColor;
-}
-ooter {
-   padding: 0 3rem;
-   max-width: 54rem;
-   height: 5rem;
-   background-color: $headerColor;
-   @include fonts($titleFonts, $footerBorder);
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+// :-moz-placeholder {
+//    /* Mozilla Firefox 4 to 18 */
+//    color: $headerColor;
+// }
+
+// ::-moz-placeholder {
+//    /* Mozilla Firefox 19+ */
+//    color: $headerColor;
+// }
+
+// :-ms-input-placeholder {
+//    /* Internet Explorer 10+ */
+//    color: $headerColor;
+// }
+// .footer {
+//    padding: 0 3rem;
+//    max-width: 54rem;
+//    height: 5rem;
+//    background-color: $headerColor;
+//    @include fonts($titleFonts, $footerBorder);
+//    position: relative;
+//    display: flex;
+//    align-items: center;
+//    justify-content: space-between;
 
 
-   &__readiness {
-      display: flex;
+//    &__readiness {
+//       display: flex;
 
-      &__item {
-         margin-right: 2.5rem;
+//       &__item {
+//          margin-right: 2.5rem;
 
-         &-radio {
-            display: none;
-         }
+//          &-radio {
+//             display: none;
+//          }
 
-         &-text {
-            cursor: pointer;
-            position: relative;
-            display: inline-block;
+//          &-text {
+//             cursor: pointer;
+//             position: relative;
+//             display: inline-block;
 
-            &::before {
-               content: "";
-               display: block;
+//             &::before {
+//                content: "";
+//                display: block;
 
-            }
+//             }
 
-            &::after {
-               content: "";
-               position: absolute;
-               top: 0;
-               left: -0.7rem;
-               width: 100%;
-               height: 100%;
-               border: 0.2rem solid $footerBorder;
-               border-radius: 1rem;
-               padding: 0 0.5rem;
-               opacity: 0;
-               transition: 0.2s;
-            }
-         }
+//             &::after {
+//                content: "";
+//                position: absolute;
+//                top: 0;
+//                left: -0.7rem;
+//                width: 100%;
+//                height: 100%;
+//                border: 0.2rem solid $footerBorder;
+//                border-radius: 1rem;
+//                padding: 0 0.5rem;
+//                opacity: 0;
+//                transition: 0.2s;
+//             }
+//          }
 
-         &-radio:checked+&-text::after {
-            opacity: 1;
-         }
+//          &-radio:checked+&-text::after {
+//             opacity: 1;
+//          }
 
-      }
+//       }
 
-   }
-}
-</style>-->
+//    }
+// }
+// </style>

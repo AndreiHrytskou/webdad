@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@600&display=swap');
 
 @import "./variables.scss";
-@import "./../../components/header/header.scss";
-@import "./../../components/container/container.scss";
-@import "./../../components/entery/entery.scss";
-@import "./../../components/footer/footer.scss";
+
 
 html {
-   font-size: 10px;
+   font-size: 16px;
 }
 
 body {
@@ -17,39 +14,4 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-}
-
-.content {
-
-   .todo {
-      position: absolute;
-      top: 9%;
-      left: 50%;
-      background-image: url("../icons/todo.svg");
-      background-repeat: no-repeat;
-      max-width: 40rem;
-      width: 100%;
-      height: 51.2rem;
-      z-index: -1;
-   }
-}
-
-@media (max-width:800px) {
-   .content {
-
-      .todo {
-         display: none;
-      }
-   }
-}
-
-.wrapper {
-   max-width: 54rem;
-   width: 100%;
-   margin: 10rem auto 0 auto;
-   background-color: $bgColorContainer;
-   align-items: center;
-   justify-content: center;
-   font-size: 2rem;
-
 }

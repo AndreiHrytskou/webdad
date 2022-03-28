@@ -66,8 +66,8 @@
 
 <script>
 import Title from "@/components/atoms/Title.vue";
-import TodoList from "@/components/molecules/TodoList.vue";
-import Entery from "@/components/atoms/Entery.vue";
+import TodoList from "@/components/molecules/TasksList.vue";
+import Entery from "@/components/atoms/Input.vue";
 import Footer from "@/components/organisms/Footer.vue";
 
 export default {

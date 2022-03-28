@@ -1,8 +1,8 @@
 <template>
   <div :class="$style.item">
     <label>
-      <input type="checkbox" />
-      <span :class="$style.checkbox">{{ item }}</span>
+      <input type="checkbox" id="checkbox" :checked="isChecked" />
+      <span :class="$style.checkbox">{{ text }}</span>
     </label>
     <span :class="$style.close"></span>
   </div>
@@ -11,7 +11,8 @@
 <script>
 export default {
   props: {
-    item: String,
+    text: String,
+    isChecked: Boolean,
   },
 };
 </script>

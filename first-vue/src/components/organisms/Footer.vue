@@ -2,18 +2,30 @@
   <footer :class="$style.footer">
     <div :class="$style.counter">1/3 left</div>
     <div :class="$style.readiness">
-      <ItemRadio :radio="'All'" />
-      <ItemRadio :radio="'Active'" />
-      <ItemRadio :radio="'Comlpeted'" />
+      <Radio
+        v-for="item in items"
+        :key="item.id"
+        :text="item.text"
+        :isChecked="item.isChecked"
+      />
     </div>
   </footer>
 </template>
 
 <script>
-import ItemRadio from "@/components/atoms/ItemRadio.vue";
+import Radio from "@/components/atoms/Radio.vue";
 export default {
+  data() {
+    return {
+      items: [
+        { id: 1, text: "All", isChecked: true },
+        { id: 2, text: "Active", isChecked: false },
+        { id: 3, text: "Comlpeted", isChecked: false },
+      ],
+    };
+  },
   components: {
-    ItemRadio,
+    Radio,
   },
 };
 </script>

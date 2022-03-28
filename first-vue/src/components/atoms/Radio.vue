@@ -1,8 +1,13 @@
 <template>
   <div :class="$style.item">
     <label>
-      <input type="radio" :class="$style.itemRadio" name="radio" />
-      <span :class="$style.itemText">{{ radio }}</span>
+      <input
+        type="radio"
+        :class="$style.itemRadio"
+        name="radio"
+        :checked="isChecked"
+      />
+      <span :class="$style.itemText">{{ text }}</span>
     </label>
   </div>
 </template>
@@ -10,7 +15,8 @@
 <script>
 export default {
   props: {
-    radio: String,
+    text: String,
+    isChecked: Boolean,
   },
 };
 </script>

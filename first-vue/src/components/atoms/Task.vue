@@ -1,10 +1,16 @@
 <template>
   <div :class="$style.item">
     <label>
-      <input type="checkbox" id="checkbox" :checked="isChecked" />
+      <input
+        type="checkbox"
+        id="checkbox"
+        :checked="isChecked"
+        v-for="task in ValidTasks"
+        :key="task.id"
+      />
       <span :class="$style.checkbox">{{ text }}</span>
     </label>
-    <span :class="$style.close"></span>
+    <span :class="$style.close" v-on:click="removeTask(task)"></span>
   </div>
 </template>
 
@@ -13,6 +19,11 @@ export default {
   props: {
     text: String,
     isChecked: Boolean,
+  },
+  methods: {
+    removeTask(task) {
+      this.$store.dispatch("removeTask", task);
+    },
   },
 };
 </script>

@@ -6,59 +6,6 @@
       <TodoList />
       <Entery />
       <Footer />
-      <!-- <div :class="$style.container">
-        <div :class="$style.container__item">
-          <label>
-            <input type="checkbox" />
-            <span :class="$style.checkbox">Task 1</span>
-          </label>
-          <span :class="$style.close"></span>
-        </div>
-        <div :class="$style.container__item">
-          <label>
-            <input type="checkbox" />
-            <span :class="$style.checkbox">Task 2</span>
-          </label>
-          <span :class="$style.close"></span>
-        </div>
-        <div :class="$style.container__item">
-          <label>
-            <input type="checkbox" />
-            <span :class="$style.checkbox">Task 3</span>
-          </label>
-          <span :class="$style.close"></span>
-        </div>
-      </div> -->
-      <!-- <div :class="$style.entery">
-        <input
-          type="text"
-          :class="$style.entery__add"
-          placeholder="Add a new task"
-        />
-      </div> -->
-      <!-- <footer :class="$style.footer">
-        <div :class="$style.counter">1/3 left</div>
-        <div :class="$style.readiness">
-          <div :class="$style.item">
-            <label>
-              <input type="radio" :class="$style.itemRadio" name="radio" />
-              <span :class="$style.itemText">All</span>
-            </label>
-          </div>
-          <div :class="$style.item">
-            <label>
-              <input type="radio" :class="$style.itemRadio" name="radio" />
-              <span :class="$style.itemText">Active</span>
-            </label>
-          </div>
-          <div :class="$style.item">
-            <label>
-              <input type="radio" :class="$style.itemRadio" name="radio" />
-              <span :class="$style.itemText">Completed</span>
-            </label>
-          </div>
-        </div>
-      </footer> -->
     </div>
   </div>
 </template>

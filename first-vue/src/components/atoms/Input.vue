@@ -3,13 +3,32 @@
     <input
       type="text"
       :class="$style.entery__add"
+      v-model="text"
+      v-on:keyup.enter="submit"
       placeholder="Add a new task"
     />
   </div>
 </template>
 
 <script>
-export default {};
+import { mapMutations } from "vuex";
+export default {
+  data() {
+    return {
+      text: "",
+    };
+  },
+  methods: {
+    ...mapMutations(["createTasks"]),
+    submit() {
+      this.createTasks({
+        text: this.text,
+        id: Date.now(),
+      });
+      this.text = "";
+    },
+  },
+};
 </script>
 
 <style lang="scss" module>
